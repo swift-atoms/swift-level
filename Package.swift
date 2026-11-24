@@ -25,6 +25,7 @@ let package = Package(
             dependencies: [
                 .product(name: "Quantity", package: "swift-quantity"),
                 .product(name: "Exponential", package: "swift-exponential"),
+                .product(name: "Numeric", package: "swift-numeric"),
             ]
         ),
         .testTarget(

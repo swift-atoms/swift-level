@@ -90,3 +90,14 @@ extension `Level Tests` {
         }
     }
 }
+
+extension `Level Tests` {
+    @Suite struct `A level's ratio is a power of ten` {
+        @Test func `Taken as pow, to the bit`() {
+            for decibels in stride(from: -60.0, through: 30.0, by: 0.37) {
+                #expect(Level.Amplitude.amount(decibels).ratio == Double.math.pow(10, decibels / 20))
+                #expect(Level.Power.amount(decibels).ratio == Double.math.pow(10, decibels / 10))
+            }
+        }
+    }
+}
