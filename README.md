@@ -1,8 +1,6 @@
 # swift-level
 
-Use this package when a value is a level in decibels: a power level or an amplitude level, each against its reference. `Level` is a namespace; start from `Level.Power` or `Level.Amplitude`, kinds of quantity of swift-quantity, and make an amount with `amount(_:)` in decibels, from a ratio with `ratio(_:)`, or from two amounts of one kind with `of(_:against:)`. An amount is a `Level.Power.Value<Scalar>` or `Level.Amplitude.Value<Scalar>`, a `Tagged` of its kind.
-
-The conversions need a scalar that conforms to `Exponential.Protocol` (swift-exponential). This package conforms no type; import swift-numeric, which conforms `Double`, `Float` and `Float16`.
+Use this package when a value is a level in decibels: a power level or an amplitude level, each against its reference. `Level` is a namespace; start from `Level.Power` or `Level.Amplitude`, kinds of quantity of swift-quantity, and make an amount with `amount(_:)` in decibels, from a ratio with `ratio(_:)`, or from two amounts of one kind with `of(_:against:)`. An amount is a `Level.Power.Value<Scalar>` or `Level.Amplitude.Value<Scalar>`, a `Tagged` of its kind. The conversions need a scalar that conforms to `Exponential.Protocol` (swift-exponential). This package conforms no type; import swift-numeric, which conforms `Double`, `Float` and `Float16`.
 
 ## Laws
 
