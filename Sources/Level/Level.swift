@@ -1,4 +1,3 @@
-public import Quantity
-
-/// Use this package when a value is a level in decibels: a power level or an amplitude level, each against its reference.
+/// Level: how far a quantity stands above or below a stated reference, on a logarithmic scale in decibels.
+/// `Level` is a namespace; a power level and an amplitude level are its two kinds.
 public enum Level {}
